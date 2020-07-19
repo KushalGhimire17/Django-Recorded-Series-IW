@@ -39,6 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'world',
+    'templating',
+    'modelpractice',
+    'modelrelation',
 ]
 
 MIDDLEWARE = [

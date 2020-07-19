@@ -1,5 +1,5 @@
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 
 from world.views import home, profile, profile_json, int_converter_view, debug_request
 
@@ -9,4 +9,5 @@ urlpatterns = [
     path('path/<str:int_data>/',int_converter_view),
     path('test-path', debug_request),
     path('', home),
+    path('template/', include('templating.urls'))
 ]
